@@ -129,7 +129,7 @@ values ('Nguyễn Văn An', '1970-11-07','456231786',10000000,'0901234121','anng
  ('Nguyễn Mỹ Kim','1984-04-08',0,'856453123','0912345698','kimcuong84@gmail.com','K123/45 Lê Lợi, Hồ Chí Minh',1),
  ('Nguyễn Thị Hào','1999-04-08',0,'965656433','0763212345','haohao99@gmail.com','55 Nguyễn Văn Linh, Kon Tum',3),
  ('Trần Đại Danh','1994-07-01',1,'432341235','0643343433','danhhai99@gmail.com','24 Lý Thường Kiệt, Quảng Ngãi',1),
- ('Nguyễn Tâm Đắc','1989-07-01',1,'344343432','0987654321','dactam@gmail.com','22 Ngô Quyền, Đà Nẵng',1);
+ ('Nguyễn Tâm Đắc','1989-07-01',1,'344343432','0987654321','dactam@gmail.com','22 Ngô Quyền, Đà Nẵng',2);
 insert into furama_resort.kieu_thue (ten_kieu_thue)
 values ('year'),('month'),('day'),('hour');
 insert into furama_resort.loai_dich_vu (ten_loai_dich_vu)
@@ -191,4 +191,25 @@ like '%Quảng Trị';
 -- 4.	Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị
  -- được sắp xếp tăng dần theo số lần đặt phòng của khách hàng. Chỉ đếm những khách hàng nào có Tên loại khách hàng là “Diamond”.
  
- select 
+ select khach_hang.ma_khach_hang, khach_hang.ho_ten, count(*) as 'so lan khach Diamond dat phong'
+ from khach_hang
+ join loai_khach on khach_hang.ma_loai_khach = loai_khach.ma_loai_khach
+ join hop_dong on khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
+ where ten_loai_khach = 'Diamond'
+ group by khach_hang.ma_khach_hang
+ order by count(*);
+ 
+ -- 5.	Hiển thị ma_khach_hang, ho_ten, ten_loai_khach, ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, 
+ -- tong_tien (Với tổng tiền được tính theo công thức như sau: Chi Phí Thuê + Số Lượng * Giá, với Số Lượng và Giá là từ bảng dich_vu_di_kem, hop_dong_chi_tiet) 
+ -- cho tất cả các khách hàng đã từng đặt phòng. (những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
+ 
+ select kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, hd.ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, sum(chi_phi_thue +  (so_luong * gia))
+ as 'tong tien'
+ from khach_hang kh
+ join loai_khach lk on kh.ma_loai_khach = lk.ma_loai_khach
+ join hop_dong hd on hd.ma_khach_hang = kh.ma_khach_hang
+ left join dich_vu dv on hd.ma_dich_vu = dv.ma_dich_vu
+ join hop_dong_chi_tiet hdct on hdct.ma_hop_dong = hd.ma_hop_dong
+ join dich_vu_di_kem dvdk on dvdk.ma_dich_vu_di_kem = hdct.ma_dich_vu_di_kem
+ group by hd.ma_hop_dong;
+ 
