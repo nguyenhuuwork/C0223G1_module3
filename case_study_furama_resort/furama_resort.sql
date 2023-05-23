@@ -22,11 +22,11 @@ so_dien_thoai varchar(45) not null,
 email varchar(45),
 dia_chi varchar(45),
 ma_vi_tri int,
-foreign key (ma_vi_tri) references vi_tri (ma_vi_tri),
+foreign key (ma_vi_tri) references vi_tri (ma_vi_tri) on delete set null,
 ma_trinh_do int,
-foreign key (ma_trinh_do) references trinh_do (ma_trinh_do),
+foreign key (ma_trinh_do) references trinh_do (ma_trinh_do)on delete set null,
 ma_bo_phan int,
-foreign key (ma_bo_phan) references bo_phan (ma_bo_phan)
+foreign key (ma_bo_phan) references bo_phan (ma_bo_phan)on delete set null
 );
 create table loai_khach(
 ma_loai_khach int primary key auto_increment,
@@ -35,7 +35,7 @@ ten_loai_khach varchar(45)
 create table khach_hang(
 ma_khach_hang int auto_increment primary key,
 ma_loai_khach int,
-foreign key (ma_loai_khach) references loai_khach (ma_loai_khach),
+foreign key (ma_loai_khach) references loai_khach (ma_loai_khach) on delete set null,
 ho_ten varchar(45) not null,
 ngay_sinh date not null,
 gioi_tinh bit(1) not null,
@@ -44,6 +44,7 @@ so_dien_thoai varchar(45) not null,
 email varchar(45),
 dia_chi varchar(45)
 );
+alter table khach_hang add column is_delete int;
 create table loai_dich_vu(
 ma_loai_dich_vu int primary key auto_increment,
 ten_loai_dich_vu varchar(45)
@@ -59,9 +60,9 @@ dien_tich varchar(45),
 chi_phi_thue double not null,
 so_nguoi_toi_da int,
 ma_kieu_thue int,
-foreign key (ma_kieu_thue) references kieu_thue ( ma_kieu_thue),
+foreign key (ma_kieu_thue) references kieu_thue ( ma_kieu_thue) on delete set null,
 ma_loai_dich_vu int,
-foreign key (ma_loai_dich_vu) references loai_dich_vu ( ma_loai_dich_vu),
+foreign key (ma_loai_dich_vu) references loai_dich_vu ( ma_loai_dich_vu) on delete set null,
 tieu_chuan_phong varchar(45),
 mo_ta_tien_nghi_khac varchar(45),
 dien_tich_ho_boi double,
@@ -81,18 +82,18 @@ ngay_lam_hop_dong datetime not null,
 ngay_ket_thuc datetime not null,
 tien_dat_coc double not null,
 ma_nhan_vien int,
-foreign key (ma_nhan_vien) references nhan_vien (ma_nhan_vien),
+foreign key (ma_nhan_vien) references nhan_vien (ma_nhan_vien) on delete set null,
 ma_khach_hang int,
-foreign key (ma_khach_hang) references khach_hang (ma_khach_hang),
+foreign key (ma_khach_hang) references khach_hang (ma_khach_hang) on delete set null,
 ma_dich_vu int,
-foreign key (ma_dich_vu) references dich_vu ( ma_dich_vu)
+foreign key (ma_dich_vu) references dich_vu ( ma_dich_vu) on delete set null
 );
 create table hop_dong_chi_tiet(
 ma_hop_dong_chi_tiet int primary key auto_increment,
 ma_hop_dong int,
-foreign key (ma_hop_dong) references hop_dong ( ma_hop_dong),
+foreign key (ma_hop_dong) references hop_dong ( ma_hop_dong) on delete set null,
 ma_dich_vu_di_kem int,
-foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem ( ma_dich_vu_di_kem),
+foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem ( ma_dich_vu_di_kem) on delete set null,
 so_luong int not null
 );
 
@@ -306,7 +307,7 @@ where loai_khach.ten_loai_khach = 'Diamond' and (khach_hang.dia_chi like '%Vinh'
  -- so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem), 
  -- tien_dat_coc của tất cả các dịch vụ đã từng được khách hàng đặt vào 3 tháng cuối năm 2020 nhưng chưa từng được khách hàng đặt vào 6 tháng đầu năm 2021
 
-select hd.ma_hop_dong, nv.ho_ten as 'ho ten nhan vien', kh.ho_ten as 'ho ten khach hang', kh.so_dien_thoai, dv.ten_dich_vu, sum(hdct.so_luong)
+select hd.ma_hop_dong, nv.ho_ten, kh.ho_ten, kh.so_dien_thoai, dv.ten_dich_vu, sum(hdct.so_luong)
 from hop_dong hd
 join nhan_vien nv 
 on hd.ma_nhan_vien = nv.ma_nhan_vien
@@ -374,7 +375,7 @@ group by hd.ma_hop_dong, dvdk.ten_dich_vu_di_kem, ldv.ma_loai_dich_vu, ldv.ten_l
 -- 15.	Hiển thi thông tin của tất cả nhân viên bao gồm ma_nhan_vien, ho_ten,
 --  ten_trinh_do, ten_bo_phan, so_dien_thoai, dia_chi mới chỉ lập được tối đa 3 hợp đồng từ năm 2020 đến 2021.
 
-select nv.ma_nhan_vien, nv.ho_ten, td.ten_trinh_do, bp.ten_bo_phan, nv.so_dien_thoai, nv.dia_chi
+select nv.ma_nhan_vien, nv.ho_ten, td.ten_trinh_do, bp.ten_bo_phan, nv.so_dien_thoai, nv.dia_chi, count(hd.ma_hop_dong)
 from nhan_vien nv
 join trinh_do td
 on nv.ma_trinh_do = td.ma_trinh_do
@@ -462,6 +463,7 @@ where year(ngay_lam_hop_dong) = '2020'
 group by dvdk.ma_dich_vu_di_kem
 having sum(hdct.so_luong) > 10;
 
+
 update dich_vu_di_kem 
 set gia = gia*2
 where ma_dich_vu_di_kem in (
@@ -486,6 +488,9 @@ union
 select kh.ma_khach_hang, kh.ho_ten, kh.email, kh.so_dien_thoai, kh.ngay_sinh, kh.dia_chi
 from khach_hang kh
 
+
+-- 21.	Tạo khung nhìn có tên là v_nhan_vien để lấy được thông tin của tất cả các nhân viên có địa chỉ là “Hải Châu” và 
+-- đã từng lập hợp đồng cho một hoặc nhiều khách hàng bất kì với ngày lập hợp đồng là “12/12/2019”.
 
 
 
