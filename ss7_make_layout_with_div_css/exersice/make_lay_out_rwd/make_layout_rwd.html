@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lay_out_rwd.css">
+    <style>
+        a {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .header {
+            justify-content: space-between;
+            height: 100px;
+            background-color: black;
+            display: flex;
+        }
+
+        .main {
+            background-color: #e61dff;
+            height: 500px;
+        }
+        .main li a:hover{
+            background-color:gold;
+        }
+
+        .maincenter {
+            background-color: white;
+        }
+
+        .footer {
+            background-color: grey;
+            height: 100px;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="row header" style="width: 100%">
+    <div class="col-1" style="color: grey;text-align: center; padding-top: 45px">Logo</div>
+    <div class="col-1" style="color: grey;text-align: center;padding-top: 45px">Home</div>
+    <div class="col-1" style="color: grey;text-align: center;padding-top: 45px">About</div>
+    <div class="col-1" style="color: grey;text-align: center;padding-top: 45px">Project</div>
+    <div class="col-1" style="color: grey;text-align: center;padding-top: 45px">Contract</div>
+    <div class="col-6"></div>
+    <div class="col-1" style="color: grey;text-align: center;padding-top: 45px">Login</div>
+</div>
+<div class="row">
+    <div class="col-2 main">
+    </div>
+    <div class="col-8 maincenter">
+        <div style="height: 250px;background-color: white">
+            <div style="height: 84px; background-color: white"></div>
+        </div>
+        <div style="height: 250px;background-color: white">
+            <div style="height: 84px;background-color: white"></div>
+        </div>
+    </div>
+    <div class="col-2 main">
+        <div style="height: 90px; background-color: #1fffc7;margin-top:20px;margin-right: 20px;margin-left: 20px;
+        text-align: center;justify-content: center">ADS</div>
+        <div style="height: 90px; background-color: #f9e9ff;margin-top:20px;margin-right: 20px;margin-left: 20px;
+        text-align: center">ADS</div>
+    </div>
+</div>
+<div class="row footer">
+    <div style="text-align: center;padding-left: 800px">FooterText</div>
+</div>
+</body>
+</html>

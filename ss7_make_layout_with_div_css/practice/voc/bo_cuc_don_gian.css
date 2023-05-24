@@ -1,0 +1,34 @@
+#logo{
+    background: cornflowerblue;
+    height: 100px;
+    width: 100%;
+}
+#chude{
+    background: #ffbb49;
+    height: 50px;
+    width: 100%;
+}
+#mucluc{
+    background: chartreuse;
+    height: 500px;
+    width: 20%;
+    float: left;
+}
+#noidung{
+    background: #c7fcff;
+    height: 500px;
+    width: 60%;
+    float: left;
+}
+#quangcao{
+    background: darkgreen;
+    height: 500px;
+    width: 20%;
+    float: left;
+}
+#lienket{
+    background: coral;
+    height: 100px;
+    width: 100%;
+    clear: both;
+}

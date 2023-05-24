@@ -1,0 +1,45 @@
+#header {
+    height: 100px;
+    width: 100%;
+    background-color: #26ff35;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    background-color: #ff3a28;
+}
+#nav ul{
+    padding: 0;
+
+}
+#nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+#section {
+    height: 300px;
+    width: 70%;
+    background-color: #c9ff26;
+    float: left;
+}
+#aside{
+    height: 600px;
+    width: 30%;
+    background-color: #edf4ff;
+    float:right;
+}
+#article{
+    height: 300px;
+    width: 70%;
+    background-color: #ff3a28;
+    float: left;
+}
+#footer{
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+    padding-top: 500px;
+}
+

@@ -1,0 +1,24 @@
+#header{
+    background: aquamarine;
+    height: 100px;
+    width: 100%;
+}
+#main{
+    background: brown;
+    height: 300px;
+    width: 70%;
+    float: left;
+
+}
+#nextmain{
+    background: blanchedalmond;
+    height: 300px;
+    width: 30%;
+    float: left;
+}
+#footer{
+    background: #9749ff;
+    height: 200px;
+    width: 100%;
+    clear: both;
+}
