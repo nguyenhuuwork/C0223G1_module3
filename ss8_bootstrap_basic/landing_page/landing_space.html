@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+
+</head>
+<body>
+<!-- narbar-->
+<div class="row">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="padding-left: 50px" href="#"><img width="100px" height="70px"
+                                                                             src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQBhAPEBESFQ4XGBUQFxYXFRURFhUXFRgXFhUTFRYdHSggGB0oHRUVITkhKCkrLi4uFyAzODMtNygtLisBCgoKDg0OGw8QGzclHyI3MS4vNy8yNjAtLSsuLis1Ly0rLTE3Ni0vLi0vLSstLi0rLy0tLS0rLTEtNS0rLTctN//AABEIALcBEwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBBAcDAv/EAEgQAAIBAgQCBQULCgQHAAAAAAABAgMRBAUGEiExBxNBUXEiYYGRshQyNDZTcoKSobHRFSM1N1Ric4Oi4VLCw+IWM0JDhLPB/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAQFBgMHAgH/xAAyEQEAAQICBwUGBwAAAAAAAAAAAQIDBBEFITFBUVKxFTNxkfAGExY0ocEUIlNhgdHh/9oADAMBAAIRAxEAPwDuIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABi4GQYuLgZB834mbgZBgXGYyDCMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKd0iYqpSw1B06k4Nykntbje0e2xcSk9J3wPD/Pl7JHxc5Wqsk3R0ROJoifWqVN/LGK/aK315fiPyxiv2ir9eX4mkCii5VxbL3FrljyWfR2Y16moqMZ1qkotTunJtO0JNcH4HziczxCxVRKtUtukvfvvZr6G+M9HwqexI+MV8KqfPn7TOWLuVxZpmJ3z9mS09TFF+mKYy1feXv+VcR8tV+ux+VcR8tV+uzTHYVkX7nNPmo85dK0tVlPI6UpycpPddt3fCckSxDaQ+L1H6f/skTD5G1wk52KJnhHRJjYyCl57reeGzerh1QjJQcfKc3G94xly2+cnNL52sbl7q7dslJwlG97NWa4+dNEh+pgArurdTLBKkowU6k7uzlttFdvJ9r+8CxAq+lNUyxuLqQdJQ2xUrqTle7tbkiOzPW9WlqGVBUoulGapu998uKTceNlz4KzuBeQYTMgAAAAAAAAAAAAAAA18dio0cJUqz95CLm/BJsDYBy6OeZnj8bKOGcopcdsHGCjHs3TfN+n0F2yrGyoZFSePqKFbylJzlG7alK3Lg+FuQE2DxwmJhVw0atN3pyW6Ls1dPt48T2AAAAUnpO+CYf58vZLsVnWssKqFL3VGpKO57djtZ2434o53bNd6mbdG2XbD4m3hrkXrk/lja5gCydblHyWJ+t/uMdblHyWJ+t/uIXYeM5V18WaN5njob4z0fCp7Ej4xXwup86XtMndM1MuedU1h6deNbytrlK8feu9+Pdc2quDwDrSvCre7v5Xbd37Sv0lg67Fumi7MUznM6/wCFVjcTRpK5FzDa4iMuqpjsLT7jy/5Ot9b+49x5f8nV+t/cpvc0fqU+f+In4K9yp7SHxeo/T9uRMmhkcKccugqSap8bJ8X7534+NzfNnhYysUR+0dDKadUuTapodZrmpTbspzowv3boU1f7Ta0BjZYfUE8NU4b702u6pTba/wAy9R557+sT+dh/ZpHrr7Byw+fwxNPhvtUT7qkLX+za/Wdx03sOS51VeP1JWlF/m4QnZ91OjGTv6Ze2XXPc/UdJ+6abtKrGMYd6lPg/TFbvqkBo/LNmlcbiWuM6dSnH5kIu7XjL2QPPov8A0niP4cfaJvH59goakVKeGcsSpwpqrspuzlt2vc3fhuITou/SeI/hx9o0c9/WB/Pof6YHUcRXjToSnOSjCKu5Pgkl2sqOM6RKEalqVKdRf4m1TT8L8fWkaPSfmEutpYZO0LOrJd7vaF/MrSfqJnSmmKFLLadSpThOtOKm3OKnt3K6jFPlZesD303qunjcRKnGnOE1Hfxakmk0nZrxXYecNaUHmzwzhUjJSnBze3Ytm7dJvde3kvsJbDZNh6WOdelShCo4uD2ramm0+KXC/BcTldfBuvq+pQvbfXqQb7lve5+pMC95frejXziGHp0qlptxU3ZLgm77eduHibee6sw2EqdXLdOta+yC4q/Lc3wXhzPjE5NhMHgJYinQgqlGEqkZcd11F832385SNFZVHG5xOde84xXWSv8A9c5Phu83vn6AJ+n0j0nPysPNR71OMn6uH3lryrNqOKw3WUZbo8nws4vuknyZq5hpvC1sI6bo049ilCEYSi+xppfYUHQuJnQ1SqLfCe+jJeeClJP1xfrYF1z/AFdQwlXq5KU61r7I24X5bpPgvv8AMR+V6+pVsbCk6E4uclBNSjNXbsr8in5jJUdYVJYmG+CqynKL47ottx581Zr1WOg5fPLsY4zpRpOpBqa8lU6kHHiuHB24eAEvjsdToYaVWrJRprm391ubfmKliekaiqlqdCpKPe2oX8FxZFdJmPlLM6eHv5EIqbXfKTfF+CX9TLZkOmcPQy+ClSpzquKc5SipttrilfkvMBr5NrbDYiuqclKlUfBKVnGT7lJdvjY1Nc6hpww9bBOE+snBNSVtq3O6vxv2dxBdIOR08PiKdWjFRhU3JxXCKlGzTiuy6b4eYlcXTpYjQjxdSnB4nqtvWOKc7wlsvu59j9YEFo3UVLBRrdZCcnPZbbt4bd173a7z51jqGljZUXThOOzffdt47tvKzf8AhJLo4y2hXhieupU6lnTtvipWupXtflyR8dI2XUaE8N1NKFPd1l9kVG9tlr28X6wJHS+r6Kw2FwfV1estCju8nbd8L++vb0F5K1pTJ8M8kwtbqKXXbIz37Fu3f4r87llAAAAUnpN+CYf58vZLsUnpN+CYf58vZJeB7+n1uQNJ/K1+t8KC+YQfMLmaliE7oj4zUfCfsSJuv8Il86X3shNEfGaj4T9iRN1/hEvnS+9nm/tx3lrwlv8A2S7ivxfAMmDAtdK3ZB+iqf0vaZIkdkH6Kp/S9pkiz0jA/LW/COjO3u8q8Z6uWZ7+sT+dh/ZpF01tlnujIKiir1IfnY+Mea9Md32GrjtIKrqD3Z1zT306mzYmvIUVa9/3S0PkSnJxCnXq1qFDCJ3ipvYvPUaX9/SzrGNwkaOlqtGHvYUJwXntB8f/AKRuU6LpYfOliVUcknJxhtSUd10uN+Nk2WLH4frcFUpXtvjKF7XtuVr29IHPui39J4j+HH2jRz39YH8+h/plz0xpZYHE1Jqs57oqFnFRtZ3vzZ447Ryq5/7s69p74VdmxNeRt4br9u37QIHpQwcljqVez2Sg6Tfc4ttL0qT9TLTpTPaWIyunHfFVoxUJQbSd4q25LtTtclcwwFPEYWVKrFSg+zz9jT7H5yl4ro4Tq/msRaPYp09zX0lJX9QFyp5lRljXRhUjKqlvcYtSaSaXG3Li0c1yz9Yf/kVf85cNL6Tjgq8qnWudRx2e9UIpNpuyu3zS7Tyw2j1DUHuzr231kquzYreVfhuv+8BPZ1hXWyevSXOcJRXi07fac30FmsMNms4VnsjUWy8vJ2zi+Cl3c5L1HVGuBWNQaMoYqu6sZOlVfGTS3Rk+9x4cfOmgJrMM2oUMI6tSpFRSurNNy7lFdrOcaGoSr6qVdrhHfWl3JzUklfxk/UyUo9G/5zy8Stv7tKz9bk7eouWUZRRwmE6ujGyvdt8ZSffJ9oEfjMNgMfGUZOE5xbg2mo1YNOzXeuPY+BzrNcN7h1DtoVXJwcZRkrXTf/blbn3PvvyRa8z6P+sxk6tPEbd0pTtKnus5O7SakuHHuNrItC0qGKjVqTdWcXuituyKfY7Xbb7QK90k4SUc4hWt5NSml4She69TResgzujicBCcZx37Vvi2k4yS4pru85s5pllLE4R0q0d0Xx7mn3xfYymYjo4vU/N4m0e6dPc16VJX9QGr0jZtTq4mlQpSUtm6UnF7ludkoprm1Z+tE1XwcqHRvKlLhNU9zXc5y3tejdY9Mi0PQw9eNSpJ1akbON47YRa5Pbd3fiyezjALEZZVoOW1TW3da9uKfL0AVDor/wCXivGl90z46VF5WFf8VewWLS2nVgVVSqupv2vjFRttv53fmbOocjp43BdXUbTT3RkucXa3pXHkBraQxtJ6bwy3xuoqm1dJqS4bbd5PFGyvQLo5lTrSxCahJTSVPa3Z3s3udi8gAAAKnr7L61fD0VRpubjKTdrcE152Ww+WuJ0tXZt1xXG5xxFmL1ubc7Jcjemsb+zz/p/Ef8M439nn/T+J1xBosO1rvCFT2FZ5p+n9Oc6TyTFUs/pVKlGUYLfdvbwvCSXaS9bLazrSapytdvs735y3bTNij0vh40lVTVcnLLgudG0RgKJot68+Knfkyv8AJy+z8TH5Mr/Jy+z8S5WFim+HbHNP0WXaNzhDTyanKGXwjJWkr3X0mbx8xR9F7ZtxbtxRGyIyQqqpqqmqd4ADo+QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/2Q=="></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a style="border-left: solid; font-size: 15px" class="nav-link active" aria-current="page"
+                           href="#">Surface</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-size: 13px" href="#" id="navbarComputer"
+                           role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Computer
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">2-in-1 PCs</a></li>
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Dual Screen</a></li>
+                            <li><a class="dropdown-item" href="#">All-in-One</a></li>
+                            <li><a class="dropdown-item" href="#">Need help deciding?</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-size: 13px" href="#"
+                           id="navbarcomputerforbusiness" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Computer for bussiness
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">2-in-1 PCs</a></li>
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Dual Screen</a></li>
+                            <li><a class="dropdown-item" href="#">All-in-One</a></li>
+                            <li><a class="dropdown-item" href="#">Need help deciding?</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-size: 13px" href="#" id="navbarAccessorie"
+                           role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Accessories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">2-in-1 PCs</a></li>
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Dual Screen</a></li>
+                            <li><a class="dropdown-item" href="#">All-in-One</a></li>
+                            <li><a class="dropdown-item" href="#">Need help deciding?</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-size: 13px" href="#" id="navbarshopnow"
+                           role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop-now
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">2-in-1 PCs</a></li>
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Dual Screen</a></li>
+                            <li><a class="dropdown-item" href="#">All-in-One</a></li>
+                            <li><a class="dropdown-item" href="#">Need help deciding?</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 13px">Support</a>
+                    </li>
+                    </li>
+                    <button style="width: 80px;height:50px;font-size: 13px "><i class="fa-solid fa-shop"></i>
+                        <p>Shop deals</p></button>
+                </ul>
+                <form class="d-flex">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <div class="collapse navbar-collapse" id="navbar">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                   All microsoft
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <button class="btn btn-outline-success" type="submit">Search <i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="btn btn-outline-success" type="submit">Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button class="btn btn-outline-success" type="submit">Sign in <i class="fa-solid fa-user-plus"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+</body>
+
+<script src="../../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+</html>
