@@ -2,7 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="demo-tomcat" target="1.8" />
+      <module name="demo-tomcat.main" target="1.8" />
+      <module name="demo-tomcat.test" target="1.8" />
+      <module name="org.example.demo-tomcat" target="1.8" />
+      <module name="org.example.demo-tomcat.main" target="1.8" />
+      <module name="org.example.demo-tomcat.test" target="1.8" />
       <module name="ss9_overview_servlet" target="1.8" />
+      <module name="ss9_overview_servlet.main" target="1.8" />
+      <module name="ss9_overview_servlet.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
