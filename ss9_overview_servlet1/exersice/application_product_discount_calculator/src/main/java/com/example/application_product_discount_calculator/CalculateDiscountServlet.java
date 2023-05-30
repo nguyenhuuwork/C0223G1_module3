@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "CalculateDiscountServlet", value = "/CalculateDiscountServlet")
+@WebServlet(name = "CalculateDiscountServlet", value = "/calculate-discount")
 public class CalculateDiscountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -19,7 +19,7 @@ public class CalculateDiscountServlet extends HttpServlet {
         double discountAmount = listPrice * discountPercent * 0.01;
         double result = listPrice - discountAmount;
         request.setAttribute("discountPrice", result);
-        RequestDispatcher r = request.getRequestDispatcher("discount.jsp");
-        r.forward(request,response);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("discount.jsp");
+        requestDispatcher.forward(request,response);
     }
 }
