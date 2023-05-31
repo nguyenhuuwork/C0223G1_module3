@@ -23,15 +23,15 @@
     <c:forEach items="${customerList}" var="customer">
         <tr>
             <td>
-                    <c:out value="${customer.name}"/>
+                <c:out value="${customer.name}"/>
             </td>
 
             <td>
-                    <c:out value="${customer.dateOfBirth}"/>
+                <c:out value="${customer.dateOfBirth}"/>
             </td>
 
             <td>
-                    <c:out value="${customer.address}"/>
+                <c:out value="${customer.address}"/>
             </td>
 
             <td>
