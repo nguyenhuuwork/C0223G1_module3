@@ -41,7 +41,7 @@ public class CustomerServlet extends HttpServlet {
         int index = customerService.findByIndex(id);
         Customer customer = customerService.customerById(index);
         request.setAttribute("customer", customer);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/update.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/update.  jsp");
         requestDispatcher.forward(request, response);
     }
 
