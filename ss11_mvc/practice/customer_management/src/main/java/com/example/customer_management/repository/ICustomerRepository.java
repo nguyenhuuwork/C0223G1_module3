@@ -9,8 +9,11 @@ public interface ICustomerRepository {
 
     void create(Customer customer);
 
-    int findById(int id);
+    int findByIndex(int id);
 
     void remove(int id);
-    
+
+    Customer customerById(int id);
+
+    void update (int index, Customer customer);
 }

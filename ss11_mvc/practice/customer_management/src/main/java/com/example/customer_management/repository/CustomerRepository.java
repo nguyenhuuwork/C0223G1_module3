@@ -30,9 +30,9 @@ public class CustomerRepository implements ICustomerRepository {
     }
 
     @Override
-    public int findById(int id) {
-        for (int i = 0; i < customerList.size() ; i++) {
-            if (customerList.get(i).getId()==id){
+    public int findByIndex(int id) {
+        for (int i = 0; i < customerList.size(); i++) {
+            if (customerList.get(i).getId() == id) {
                 return i;
             }
         }
@@ -48,5 +48,15 @@ public class CustomerRepository implements ICustomerRepository {
                 break;
             }
         }
+    }
+
+    @Override
+    public Customer customerById(int id) {
+        return customerList.get(id);
+    }
+
+    @Override
+    public void update(int index, Customer customer) {
+        customerList.set(index, customer);
     }
 }

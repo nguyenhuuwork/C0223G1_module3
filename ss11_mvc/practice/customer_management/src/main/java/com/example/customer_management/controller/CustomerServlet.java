@@ -36,9 +36,13 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-    private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
+    private void showEditForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        customerService.findById(id);
+        int index = customerService.findByIndex(id);
+        Customer customer = customerService.customerById(index);
+        request.setAttribute("customer", customer);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/view/customer/update.jsp");
+        requestDispatcher.forward(request, response);
     }
 
 
@@ -71,13 +75,15 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-    private void update(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("ID"));
+    private void update(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
-
-
+        Customer customer = new Customer(id, name, email, address);
+        int index = customerService.findByIndex(id);
+        customerService.update(index, customer);
+        response.sendRedirect("/customer");
     }
 
     private void save(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -87,7 +93,7 @@ public class CustomerServlet extends HttpServlet {
         String address = request.getParameter("address");
         Customer customer = new Customer(id, name, email, address);
         customerService.create(customer);
-        response.sendRedirect("/customer");
+
     }
 
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) {

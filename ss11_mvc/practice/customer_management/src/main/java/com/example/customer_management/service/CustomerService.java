@@ -19,13 +19,23 @@ public class CustomerService implements ICustomerService {
     }
 
     @Override
-    public int findById(int id) {
-        return customerRepository.findById(id);
+    public int findByIndex(int id) {
+        return customerRepository.findByIndex(id);
     }
 
 
     @Override
     public void remove(int id) {
         customerRepository.remove(id);
+    }
+
+    @Override
+    public Customer customerById(int id) {
+        return customerRepository.customerById(id);
+    }
+
+    @Override
+    public void update(int index, Customer customer) {
+        customerRepository.update(index, customer);
     }
 }

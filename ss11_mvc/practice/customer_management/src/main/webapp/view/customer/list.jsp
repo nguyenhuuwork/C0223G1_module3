@@ -37,10 +37,10 @@
                 <c:out value="${customer.address}"/>
             </td>
             <td>
-                <a href="/customer?action=edit&id=${customer.id}"><button type="submit">Edit</button> </a>
+                <a href="/customer?action=edit&id=${customer.id}"><button type="submit">Edit</button></a>
             </td>
             <td>
-                <a href="/customer?action=delete&id=${customer.id}"><button type="submit">Delete</button> </a>
+                <a href="/customer?action=delete&id=${customer.id}"><button type="submit">Delete</button></a>
             </td>
         </tr>
     </c:forEach>
