@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>aaaaaaaaa</h1>
 <form method=post>
     <table border="1" cellpadding="0">
         <tr>
@@ -19,11 +20,11 @@
         </tr>
         <tr>
             <td>Price:</td>
-            <td><input type="text" name="price" value="${product.getPrice}"></td>
+            <td><input type="text" name="price" value="${product.getPriceProduct()}"></td>
         </tr>
         <tr>
             <td>Discribe:</td>
-            <td><input type="text" name="discribe" value="${product.getDiscribe()}"></td>
+            <td><input type="text" name="describe" value="${product.getDiscribe()}"></td>
         </tr>
         <tr>
             <td>Producer:</td>

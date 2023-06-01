@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7a277446-f25e-4ba3-a18d-2c670d563e6b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ss11_mvc/.idea/ss11_mvc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/.idea/exersice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/build/classes/java/main/com/example/management_product/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/build/classes/java/main/com/example/management_product/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/build/libs/management_product-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/build/libs/management_product-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/src/main/java/com/example/management_product/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/src/main/java/com/example/management_product/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/src/main/webapp/view/product/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_mvc/exersice/management_product/src/main/webapp/view/product/update.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2QaZ8sn7FSwqe5Yk1Mab4coVhil" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a277446-f25e-4ba3-a18d-2c670d563e6b" name="Changes" comment="" />
+      <created>1685593496770</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685593496770</updated>
+      <workItem from="1685593498152" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

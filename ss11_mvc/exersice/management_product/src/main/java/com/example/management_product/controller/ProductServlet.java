@@ -102,13 +102,15 @@ public class ProductServlet extends HttpServlet {
 
     private void update(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
+        Product product = productService.productById(id);
         String name = request.getParameter("name");
         double price = Double.parseDouble(request.getParameter("price"));
         String describe = request.getParameter("describe");
         String producer = request.getParameter("producer");
-        Product product = new Product(id, name, price, describe, producer);
-        int index = productService.findByIndex(id);
-        productService.update(index, product);
+        product.setName(name);
+        product.setPriceProduct(price);
+        product.setDiscribe(describe);
+        product.setProducer(producer);
         try {
             response.sendRedirect("/Product");
         } catch (IOException e) {
