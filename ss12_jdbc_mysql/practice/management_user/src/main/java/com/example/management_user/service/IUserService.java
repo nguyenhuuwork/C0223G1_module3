@@ -10,4 +10,8 @@ public interface IUserService {
     void createUser(User user);
 
     void deleteUser(int id);
+
+    void updateUser(User user);
+
+    User selectById(int id);
 }

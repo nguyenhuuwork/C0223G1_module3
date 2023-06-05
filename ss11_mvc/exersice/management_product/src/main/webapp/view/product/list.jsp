@@ -12,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/Product?action=create">
+<a href="/product?action=create">
     <button type="submit">AddProduct</button>
 </a>
 <%--int id, String name, double priceProduct, String discribe, String producer--%>
@@ -44,12 +44,12 @@
                 <c:out value="${product.producer}"/>
             </td>
             <td>
-                <a href="/Product?action=edit&id=${product.id}">
+                <a href="/product?action=edit&id=${product.id}">
                     <button type="submit">Edit</button>
                 </a>
             </td>
             <td>
-                <a href="/Product?action=delete&id=${product.id}">
+                <a href="/product?action=delete&id=${product.id}">
                     <button type="submit">Delete</button>
                 </a>
             </td>

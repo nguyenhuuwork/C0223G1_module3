@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6139e0fe-c056-45d8-a080-1a506a859765" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/build/classes/java/main/com/example/management_product/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/build/classes/java/main/com/example/management_product/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/build/libs/management_product-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/build/libs/management_product-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/java/com/example/management_product/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/java/com/example/management_product/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/webapp/view/product/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/webapp/view/product/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/webapp/view/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_mvc/exersice/management_product/src/main/webapp/view/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/repository/IUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/repository/IUserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/build/classes/java/main/com/example/management_user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/build/libs/management_user-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/build/libs/management_user-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/src/main/java/com/example/management_user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/src/main/webapp/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/src/main/webapp/view/user/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice/management_user/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/practice/management_user/src/main/webapp/view/user/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Qg8vvwIL9pMCKAz7B8TWsIh2tz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/practice/management_user" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6139e0fe-c056-45d8-a080-1a506a859765" name="Changes" comment="" />
+      <created>1685764097676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685764097676</updated>
+      <workItem from="1685764099063" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

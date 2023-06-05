@@ -6,6 +6,6 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<a href ="/Product">Danh sách chi tiết sản phẩm</a>
+<a href ="/product">Danh sách chi tiết sản phẩm</a>
 </body>
 </html>

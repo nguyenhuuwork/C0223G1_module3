@@ -12,7 +12,7 @@
 </head>
 <body>
 <h2>Thêm mới sản phẩm</h2>
-<form method="post" action="/Product?action=create">
+<form method="post" action="/product?action=create">
     Nhập ID <input type="text" name="id">
     Nhập Tên <input type="text" name="name">
     Nhập giá <input type="text" name="price">

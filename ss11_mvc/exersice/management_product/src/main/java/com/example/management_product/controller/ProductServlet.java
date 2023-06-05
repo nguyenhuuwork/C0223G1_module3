@@ -9,7 +9,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "ProductServlet", value = "/Product")
+@WebServlet(name = "ProductServlet", value = "/product")
 public class ProductServlet extends HttpServlet {
     private ProductService productService = new ProductService();
 
@@ -28,7 +28,7 @@ public class ProductServlet extends HttpServlet {
                 break;
             case "delete":
                 showFormDelete(request, response);
-                response.sendRedirect("/Product");
+                response.sendRedirect("/product");
                 break;
             default:
                 listProduct(request, response);
@@ -89,7 +89,7 @@ public class ProductServlet extends HttpServlet {
         switch (action) {
             case "create":
                 save(request, response);
-                response.sendRedirect("/Product");
+                response.sendRedirect("/product");
                 break;
             case "edit":
                 update(request, response);
@@ -112,7 +112,7 @@ public class ProductServlet extends HttpServlet {
         product.setDiscribe(describe);
         product.setProducer(producer);
         try {
-            response.sendRedirect("/Product");
+            response.sendRedirect("/product");
         } catch (IOException e) {
             e.printStackTrace();
         }
